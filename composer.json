@@ -1,0 +1,11 @@
+{
+    "name": "tema/web_lab_4",
+    "authors": [
+        {
+            "name": "salute"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
