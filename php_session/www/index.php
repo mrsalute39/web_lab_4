@@ -21,4 +21,10 @@
         <?php endforeach; ?>
     </ul>
     <?php unset($_SESSION['errors']); ?>
+	
+if (isset($_SESSION['api_data'])) {
+    echo "<h3>Данные из API:</h3>";
+    echo "<pre>" . print_r($_SESSION['api_data'], true) . "</pre>";
+}
+
 <?php endif; ?>

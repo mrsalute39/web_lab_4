@@ -30,6 +30,14 @@ $line = $username . ";" . $userage . ";" . $theme . ";" . $prize_bool . ";" . $d
 
 file_put_contents("data.txt", $line, FILE_APPEND);
 
+require_once 'ApiClient.php';
+$api = new ApiClient();
+
+$url = 'https://opentdb.com/api.php?amount=5'; // пример
+$apiData = $api->request($url);
+
+$_SESSION['api_data'] = $apiData;
+
 
 
 header("Location: index.php");
