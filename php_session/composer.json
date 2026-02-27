@@ -1,0 +1,14 @@
+{
+    "name": "tema/php_session",
+    "description": "XD",
+    "type": "project",
+    "authors": [
+        {
+            "name": "mrsalute39",
+            "email": "120706814+mrsalute39@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
